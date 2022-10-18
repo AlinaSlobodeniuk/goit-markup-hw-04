@@ -4,6 +4,7 @@
     --color-background:#FFFFFF;
     --text-color:#212121;
     --text-color-optional:#757575;
+    --social-icon-color: #AFB1B8;
    
 }
 
@@ -225,6 +226,17 @@ nav{
     list-style: none;
 }
 
+.box-card-icon{
+display: flex;
+align-items: center;
+justify-content: center;
+background: #F5F4FA;
+border-radius: 4px;
+padding: 25px 100px;
+margin-bottom: 30px;
+}
+
+
 .card>.card-item{
    width: 270px;
 }
@@ -336,6 +348,73 @@ nav{
     margin-bottom: 0;
     text-align: center;
 }
+
+.our-team-social-links {
+}
+.our-team-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.our-team-social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-color: transparent;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.our-team-social-icon {
+    fill: var(--social-icon-color);
+}
+
+.our-team-social-link:hover{
+    background-color: var(--color-accent);
+}
+
+.our-team-social-link:hover .our-team-social-icon{
+    background-color: var(--color-accent);
+    fill: var(--color-background)
+}
+
+.regular-customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.regular-customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.regular-customers-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.regular-customers-icon {
+    fill: var(--social-icon-color);
+}
+
+.regular-customers-link:hover{
+    border-color: var(--color-accent);
+}
+
+.regular-customers-link:hover .regular-customers-icon{
+   fill: var(--color-accent);
+}
 /* Футер */
 .footer{
     background-color: var(--color-brend);
@@ -394,10 +473,56 @@ nav{
 
 .link-contact-address:focus{color:var(--color-accent)}
 
+.footer-box{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social-box{
+   margin-left: 70px;
+}
+
+.footer-social-title{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.footer-social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.footer-social-icon {
+    fill: var(--color-background);
+}
+
+.footer-social-link:hover{
+    background-color: var(--color-accent);
+}
+
+/* Портфоліо */
+
 .portfolio{
     background-color: var(--color-background);
 }
- /* Портфоліо */
+ 
  .section .portfolio{
     display: flex;
    
