@@ -146,10 +146,17 @@ nav{
 
 .current-link-item:focus{color:var(--color-accent)}
 
+.contact-icon{
+    fill: currentColor;
+}
+
 .link-contact-item{
     text-decoration: none;
     color: var(--text-color-optional);
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .link-contact-item:hover{color:var(--color-accent)}
@@ -167,6 +174,11 @@ nav{
 .section.hero{
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: #c4c4c4;
+    background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/img\(21\).jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
 }
 
 .hero-title{
