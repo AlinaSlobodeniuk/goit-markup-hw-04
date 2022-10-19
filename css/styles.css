@@ -149,6 +149,7 @@ nav{
 
 .contact-icon{
     fill: currentColor;
+    margin-right: 10px;
 }
 
 .link-contact-item{
@@ -181,6 +182,8 @@ nav{
     background-repeat: no-repeat;
     background-size: 1600px;
     background-position: center;
+    width: 1600px;
+    margin: auto;
 }
 
 .hero-title{
@@ -236,7 +239,7 @@ align-items: center;
 justify-content: center;
 background: #F5F4FA;
 border-radius: 4px;
-padding: 25px 100px;
+height: 120px;
 margin-bottom: 30px;
 }
 
@@ -361,6 +364,7 @@ margin-bottom: 30px;
     justify-content: center;
     gap: 10px;
     padding: 0;
+    margin-top: 16px;
 }
 
 .our-team-social-list>li{
@@ -383,7 +387,16 @@ margin-bottom: 30px;
     background-color: var(--color-accent);
 }
 
+.our-team-social-link:focus{
+    background-color: var(--color-accent);
+}
+
 .our-team-social-link:hover .our-team-social-icon{
+    background-color: var(--color-accent);
+    fill: var(--color-background)
+}
+
+.our-team-social-link:focus .our-team-social-icon{
     background-color: var(--color-accent);
     fill: var(--color-background)
 }
@@ -402,6 +415,7 @@ margin-bottom: 30px;
     justify-content: center;
     gap: 30px;
     padding: 0;
+    margin: 0;
 }
 
 .regular-customers-list>li{
@@ -427,6 +441,15 @@ margin-bottom: 30px;
 .regular-customers-link:hover .regular-customers-icon{
    fill: var(--color-accent);
 }
+
+.regular-customers-link:focus{
+    border-color: var(--color-accent);
+}
+
+.regular-customers-link:focus .regular-customers-icon{
+   fill: var(--color-accent);
+}
+
 /* Футер */
 .footer{
     background-color: var(--color-brend);
@@ -533,6 +556,10 @@ margin-bottom: 30px;
     background-color: var(--color-accent);
 }
 
+.footer-social-link:focus{
+    background-color: var(--color-accent);
+}
+
 /* Портфоліо */
 
 .portfolio{
@@ -625,6 +652,7 @@ margin-top: 30px;
     letter-spacing: 0.03em;
     cursor: pointer;
     padding: 6px 22px;
+    border: none;
 }
 
 .button-portfolio-item:hover{
